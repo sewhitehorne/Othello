@@ -17,9 +17,7 @@ public class Driver {
 		
 		// create a new GUI window
 		new BoardGUI();
-		//GameBoard game = new GameBoard();
 		
-		//Kingdom demo = new Kingdom();
 	}
 
 }

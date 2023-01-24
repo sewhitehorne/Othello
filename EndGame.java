@@ -1,4 +1,10 @@
-
+/**
+ * 
+ * @author Sadie Whitehorne
+ * 
+ * Class used by BoardController that counts the number of discs on the board and determines the winner.
+ *
+ */
 public class EndGame {
 	
 	private BoardGUI board;

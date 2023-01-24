@@ -1,6 +1,12 @@
 import javax.swing.*;
 import java.awt.Color;
-
+/**
+ * 
+ * @author Sadie Whitehorne
+ * 
+ * Class that represents the squares on the gameboard (8x8 so 64 squares). Has it's corresponding x and y coordinate, whether or not it is enabled (piece can be placed there), it's colour (0 - white, 1 - black, 2 - null).
+ *
+ */
 
 public class Square extends JPanel {
 	

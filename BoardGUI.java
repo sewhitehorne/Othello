@@ -5,7 +5,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
-
+/**
+ * 
+ * @author Sadie Whitehorne
+ * 
+ * Class that creates the GUI for the gameboard and initialize the starting position of the discs in the middle. 
+ *
+ */
+/* TO DO: Make discs appear as circles instead of just filling the whole square */
 public class BoardGUI extends JFrame implements ActionListener, MouseListener {
 
 	
@@ -42,7 +49,13 @@ public class BoardGUI extends JFrame implements ActionListener, MouseListener {
 		frame.add(gameBoardPanel, BorderLayout.CENTER);
 		frame.add(playerPanel, BorderLayout.NORTH);
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(java.awt.event.WindowEvent e) {
+			  System.exit(0);
+			}
+		});
+		
 		
 		frame.setVisible(true);
 		
@@ -82,42 +95,22 @@ public class BoardGUI extends JFrame implements ActionListener, MouseListener {
 	
 	
 	@Override
-	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mouseClicked(MouseEvent e) {}
 
 	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mousePressed(MouseEvent e) {}
 
 	@Override
-	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mouseReleased(MouseEvent e) {}
 
 	@Override
-	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mouseEntered(MouseEvent e) {}
 
 	@Override
-	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mouseExited(MouseEvent e) {}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		
-	}
-	
-	
-	
+	public void actionPerformed(ActionEvent e) {}
 	
 
 }
